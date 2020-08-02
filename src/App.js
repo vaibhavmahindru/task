@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import Sidebar from "./components/sidebar";
+import Header from "./components/header";
+import Cards from "./components/cards";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+      <div>
+        <Sidebar />
+      </div>
+      <main>
+        <div className="body">
+          <h2>
+            Dashboard <span>statistics and more</span>
+          </h2>
+          <label for="date">Filter by Date</label>
+          <br />
+          <input type="date" id="date" name="date"></input>
+          <Cards />
+        </div>
+      </main>
+    </React.Fragment>
   );
 }
 

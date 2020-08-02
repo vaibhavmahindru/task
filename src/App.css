@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+html,
+body {
+  margin: auto;
+  max-width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  /* background-color: rgb(17, 16, 16);*/
 }
+.sidebar {
+  background-color: #060618;
+  color: whitesmoke;
+  float: left;
+  width: 48vh;
+  height: 100vh;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  position: fixed;
+  left: 0;
+  border-right: 2px solid black;
+  overflow-y: scroll;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar > .avatar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 10px 0 15px 15px;
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.pic {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.sidebar > .avatar > h1 {
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.sidebar > .menu > .item {
+  display: grid;
+  grid-template-columns: 30px 200px 30px;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+.sidebar > .menu > .item > h2 {
+  font-size: 20px;
+
+  font-weight: normal;
+}
+.sidebar > .menu > .item > button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  cursor: pointer;
   color: white;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  clear: left;
+  float: right;
+  width: 76.7%;
+  border-bottom: 1.5px solid black;
+  height: 50px;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(233, 229, 223);
+
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header > .avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+.dp {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding-right: 10px;
+}
+.header > .avatar > h2 {
+  font-weight: normal;
+}
+.header > .avatar > button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.header > .hamburger > button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  color: #2f2f86;
+}
+main {
+  clear: left;
+  float: right;
+  width: 76.7%;
+  background-color: #f5f2f2;
+}
+.body {
+  padding: 18px 15px;
+}
+
+.body > h2 {
+  font-weight: 450;
+  font-size: 30px;
+}
+
+.body > h2 > span {
+  color: gray;
+  font-size: 20px;
+}
+
+#date {
+  width: 300px;
+  line-height: 20px;
+  border: 1px solid gray;
 }
