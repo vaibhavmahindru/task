@@ -3,6 +3,9 @@ import "./App.css";
 import Sidebar from "./components/sidebar";
 import Header from "./components/header";
 import Cards from "./components/cards";
+import Footer from "./components/footer";
+import Links from "./components/links";
+import Activities from "./components/activities";
 function App() {
   return (
     <React.Fragment>
@@ -20,7 +23,12 @@ function App() {
           <input type="date" id="date" name="date"></input>
           <Cards />
         </div>
+        <div className="content">
+          <Activities />
+          <Links />
+        </div>
       </main>
+      <Footer />
     </React.Fragment>
   );
 }

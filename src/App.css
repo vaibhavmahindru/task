@@ -135,3 +135,145 @@ main {
   line-height: 20px;
   border: 1px solid gray;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30%;
+  margin: 10px;
+}
+
+.card > .icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+
+.card > .icons > span {
+  font-size: 50px;
+  color: gray;
+}
+
+.card > .icons > .icon {
+  font-size: 55px;
+}
+
+.card > .details {
+  padding: 0 20px;
+}
+
+.card > .details > h2 {
+  font-weight: 500;
+  font-size: 30px;
+  color: grey;
+  padding: 0;
+}
+
+.card > .details > span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #424288;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  clear: left;
+  float: right;
+  width: 76.7%;
+  background-color: white;
+  height: 80px;
+  border-top: 1px solid black;
+}
+footer > p {
+  color: gray;
+  padding: 10px;
+}
+
+footer > img {
+  width: 80px;
+  object-fit: fill;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 64px 18px 25px;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: #fff;
+  padding: 10px;
+  width: 35%;
+}
+
+.container > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > .title > h2 {
+  font-weight: 500;
+}
+.links {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.links > .link {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(37, 37, 114);
+  background-color: rgb(189, 187, 187);
+  margin-bottom: 5px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.link > h3 > span {
+  margin-left: 2px;
+}
+
+.activities {
+  background-color: #fff;
+  padding: 10px;
+  width: 50%;
+}
+
+.activities > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activities > .title > h2 {
+  font-weight: 500;
+}
+
+.activities > .title > h2 > span {
+  font-size: 15px;
+  color: #303069;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #303069;
+}
+
+.time {
+  font-style: italic;
+  color: grey;
+  font-size: 15px;
+}
