@@ -24,8 +24,7 @@ class Sidebar extends Component {
     return (
       <div className="sidebar">
         <div className="avatar">
-          <img src="/images/ts2.jpg" alt="" className="pic" />
-          <h1>PickGeeks</h1>
+          <img src="/images/logo.jpg" />
         </div>
 
         <div className="menu">
